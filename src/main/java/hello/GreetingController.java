@@ -15,8 +15,8 @@ public class GreetingController {
     }
 
     @GetMapping("/getData")
-    public String getData(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
-        model.addAttribute("name", name);
+    public String getData(@RequestParam(name="value", required=false, defaultValue="World") String name, Model model) {
+        model.addAttribute("value", name);
         return "getData";
     }
 
